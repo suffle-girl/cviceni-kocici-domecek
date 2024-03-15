@@ -52,8 +52,13 @@ h1 {
 		dovádění nejvíc místa
 	*/
   position: absolute;
-  top: 35%;
-  left: 40%;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Změní pozici dokumentu o nějakou hodnotu - chci ho posunout na ose x o -50% z šířky daného prvku, a na ose y o -50 procent výšky daného prvku */
+
+  /* top: 35%;
+  left: 40%; - špatně, protože je to jen zhruba + pokud změním rozměry domečku, nebude mi to tady pak už vycházet */
 }
 
 .kniha {
@@ -67,8 +72,9 @@ h1 {
 		(tj. vyčuhuje z domečku ven)
 	*/
   position: absolute;
-  left: -50px;
-  top: -50px;
+  /* left: -50px;
+  top: -50px; */
+  transform: translate(-50%, -50%);
 }
 
 .sluchatka {
